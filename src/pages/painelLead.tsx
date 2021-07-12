@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  Flex,
-  Icon,
-  IconButton,
-  Image,
-} from "@chakra-ui/react";
+import { Box, Button, Icon, Image, Link } from "@chakra-ui/react";
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
@@ -30,7 +22,7 @@ export default function painelLead() {
           colorScheme="blue"
           leftIcon={<Icon as={RiAddLine} fontSize="20" />}
         >
-          Novo Lead
+          <Link href="/newLead">Novo Lead</Link>
         </Button>
       </Box>
       <div className="App">
