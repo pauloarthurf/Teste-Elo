@@ -11,6 +11,7 @@ import {
   Text,
   Tr,
   HStack,
+  Link,
 } from "@chakra-ui/react";
 import { useRef, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
@@ -209,7 +210,7 @@ export default function NewLead() {
               toast.success("Lead incluído com sucesso!");
             }}
           >
-            Salvar
+            <Link href="/newLead">Salvar</Link>
           </Button>
 
           <ToastContainer
