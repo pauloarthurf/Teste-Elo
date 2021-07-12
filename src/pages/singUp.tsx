@@ -1,6 +1,6 @@
-import { Button, Flex, Image, Stack, Text } from "@chakra-ui/react";
+import { Button, Flex, Image, Stack, Text, Link } from "@chakra-ui/react";
 import { FormHandles } from "@unform/core";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
 import { Input } from "../components/Form/Input";
 import getValidationErrors from "../shared/getValidationErrors";
@@ -79,7 +79,7 @@ export default function Cadastro() {
             </Text>
           </Stack>
           <Button type="submit" marginTop={6} colorScheme="red" size="lg">
-            Registrar
+          <Link href="/painelLead">Registrar</Link>
           </Button>
         </Flex>
       </Stack>
